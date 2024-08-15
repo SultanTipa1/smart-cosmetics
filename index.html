@@ -1,110 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmetic Website</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmetic Shop</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  
 </head>
 <body>
-    <header class="bg-dark text-white text-center p-3">
-        <h1>Smart Cosmetic</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div>
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
-                    </svg>
-                    Cart <span id="cart-count" class="badge bg-secondary">0</span>
-                </button>
-                <input type="text" name="shop" id="shop" placeholder="Shop today!">
-            </div>
-            <a class="navbar-brand" href="#">Home</a>
-            <button class="btn btn-primary" onclick="showSection('product-form-section')">Add Product</button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="showSection('products-section')">Products</a>
-                    </li>
-                 </ul>
-            </div>
+  <header class="header">
+    <a href="#" class="logo"><i class="fas fa-shopping-basket">Cosmetic Shop</i></a>
 
-        </nav>
-        <select class="form-select" id="price-filter" aria-label="Filter by price" onchange="filterByPrice()">
-            <option value="" selected>Filter </option>
-            <option value="low-high">Low to High</option>
-            <option value="high-low">High to Low</option>
-        </select>
-        <input type="text" name="search" id="search" placeholder="Search Here">
-        <button>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-            </svg>
-        </button>
-    </header>
-    
-    <div id="product-form-section" style="display: none;">
-        <form id="product-form" class="row g-3">
-            <div class="col-md-6">
-                <label for="productImage" class="form-label">Product Image URL</label>
-                <input type="text" class="form-control" id="productImage" required>
-            </div>
-            <div class="col-md-6">
-                <label for="productName" class="form-label">Product Name</label>
-                <input type="text" class="form-control" id="productName" required>
-            </div>
-            <div class="col-md-6">
-                <label for="productPrice" class="form-label">Product Price</label>
-                <input type="text" class="form-control" id="productPrice" required>
-            </div>
-            <div class="col-md-6">
-                <label for="productDescription" class="form-label">Product Description</label>
-                <textarea class="form-control" id="productDescription" required></textarea>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Save Product</button>
-                <button type="button" class="btn btn-secondary" onclick="showSection('products-section')">Cancel</button>
-            </div>
-        </form>
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#features">features</a>
+      <a href="#products">products</a>
+      <a href="#categories">categories</a>
+      <a href="#review">review</a>
+      <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+      <div class="fas fa-bars" id="menu-btn"></div>
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      <div class="fas fa-user" id="login-btn"></div>
     </div>
-</div>
-    
-   
-  
 
-   
-            </div>
-            <div class="col-md-9">
-                <div id="productList" class="row">
-                     
-                </div>
-            </div>
+    <form action="" class="search-form" id="search-form">
+      <input type="search" name="" id="search-box" placeholder="search here...">
+      <label for="search-box" class="fas fa-search"></label>
+    </form>
+    
+    <div class="shopping-cart" id="shopping-cart">
+      <div class="total">total : Ksh:0/-</div>
+      <a href="#" class="btn" id="checkout-btn">checkout</a>
+    </div>
+    
+    <form action="" class="login-form" id="login-form">
+      <h3>Login Now</h3>
+      <input type="email" name="email" placeholder="Your Email" id="login-email" class="box" required>
+      <input type="password" name="password" placeholder="Your Password" id="login-password" class="box" required>
+      <p>Forgot your password? <a href="#" id="forgot-password-link">Click Here</a></p>
+      <p>Don't have an account? <a href="#" id="create-account-link">Create Now</a></p>
+      <input type="submit" name="submit" id="login-submit" value="Login Now" class="btn">
+    </form>
+  </header>
+
+  <!-- home section -->
+  <section class="home" id="home">
+    <div class="content">
+      <h3><span>Cosmetic Shop</span> Online Store</h3>
+      <p>This is home for all you need under one roof. We got you covered for all your beauty products. Reach out to us today.</p>
+      <a href="#" class="btn">shop now</a>
+    </div>
+  </section>
+
+  <!-- features section -->
+  <section class="features" id="features">
+    <h1 class="heading">our <span>features</span></h1>
+    <div class="box-container" id="features-container">
+      <!-- Feature boxes will be inserted here -->
+    </div>
+  </section>
+
+  <!-- product section -->
+  <section class="products" id="products">
+    <h1 class="heading">our <span>products</span></h1>
+    <!-- First Swiper Slider -->
+    <div class="swiper product-slider" id="product-slider-1">
+      <div class="swiper-wrapper">
+        <!-- Product slides will be inserted here -->
+      </div>
+    </div>
+    <!-- Second Swiper Slider -->
+    <div class="swiper product-slider" id="product-slider-2">
+      <div class="swiper-wrapper">
+        <!-- Product slides will be inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- categories section -->
+  <section class="categories" id="categories">
+    <h1 class="heading">product <span>categories</span></h1>
+    <div class="box-container">
+      <!-- Added dynamically via js -->
+    </div>
+  </section>
+
+  <!-- review section -->
+  <section class="review" id="review">
+    <h1 class="heading">customer's <span>review</span></h1>
+    <div class="swiper review-slider">
+      <div class="swiper-wrapper">
+        <!-- Added dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- blog section -->
+  <section class="blogs" id="blogs">
+    <h1 class="heading">our <span>blogs</span></h1>
+    <div class="box-container">
+      <!-- Blog entries will be dynamically inserted here -->
+    </div>
+  </section>
+
+  <!-- Blog Modal -->
+  <div id="blog-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-blog-content">
+        <!-- Dynamic content will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Cosmetic Shop<i class="fas fa-shopping-basket"></i></h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, corporis?</p>
+        <div class="share">
+          <a href="" class="fab fa-facebook-f"></a>
+          <a href="" class="fab fa-twitter"></a>
+          <a href="" class="fab fa-instagram"></a>
+          <a href="" class="fab fa-linkedin"></a>
         </div>
-    
+      </div>
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#" class="links"><i class="fas fa-phone"></i>+254-722-000-000</a>
+        <a href="#" class="links"><i class="fas fa-envelope"></i>group5@gmail.com</a>
+        <a href="#" class="links"><i class="fas fa-map-marker-alt"></i>Nairobi, Kenya</a>
+      </div>
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#" class="links"><i class="fas fa-arrow-right"></i>home</a>
+        <a href="#" class="links"><i class="fas fa-arrow-right"></i>features</a>
+        <a href="#" class="links"><i class="fas fa-arrow-right"></i>products</a>
+        <a href="#" class="links"><i class="fas fa-arrow-right"></i>categories</a>
+        <a href="#" class="links"><i class="fas fa-arrow-right"></i>review</a>
+        <a href="#" class="links"><i class="fas fa-arrow-right"></i>blogs</a>
+      </div>
+      <div class="box">
+        <h3>newsletter</h3>
+        <p>subscribe for latest updates</p>
+        <input type="email" name="" class="email" placeholder="your email" id="">
+        <input type="submit" name="" value="subscribe" id="" class="btn">
+        <img src="images/payments.jpeg" class="payment-img" alt="">
+      </div>
+    </div>
+    <div class="credit">created by <span>Group 5</span> | all rights reserved</div>
+  </section>
 
-   
-
-    <main class="container my-4">
-        <section id="products-section" class="row">
-           
-        </section>
-        <section id="product-details-section" class="row" style="display: none;"></section>
-
-        <section id="blog-section" class="row" style="display: none;"></section>
-        <section id="blog-details-section" class="row" style="display: none;"></section>
-        <section id="cart-section" class="row">
-         
-    </main>
-
-    <footer class="bg-dark text-white text-center p-3">
-        <p>&copy; 2024 Cosmetic Shop</p>
-    </footer>
-    
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  
 </body>
 </html>

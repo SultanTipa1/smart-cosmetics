@@ -1,62 +1,184 @@
 {
-    "Products": [
-      {
-        "id": "7a45",
-        "productImage": "./images/tcb for hair.jpeg",
-        "productName": "tcb relaxer",
-        "productPrice": "250 ksh",
-        "productDescription": "Relaxing hair",
-        "rating": 5
-      },
-      {
-        "id": "bed9",
-        "productImage": "./images/face-lightenind cream.jpg",
-        "productName": "Brightening Cream",
-        "productPrice": "1600 Ksh",
-        "productDescription": "Lighten up plus Active Skin.",
-        "rating": 5
-      },
-      {
-        "id": "d0eb",
-        "productImage": "./images/Makari Multi cream.jpg.webp",
-        "productName": "Makari Cream",
-        "productPrice": "1400 Ksh",
-        "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
-      },
-      {
-        "id": "7bb0",
-        "productImage": "./images/Makari Multi cream.jpg.webp",
-        "productName": "Makari Cream",
-        "productPrice": "1400 Ksh",
-        "productDescription": "Makari multi-action lightening cream is a hydrating SPF moisturizer that replenishes dry skin with a skin-silkening blend of botanicals that softens."
-      },
-      {
-        "id": "bd63",
-        "productImage": "./images/nails.jpg",
-        "productName": "Nail polish",
-        "productPrice": "100 Ksh",
-        "productDescription": "New nails, new you."
-      },
-      {
-        "id": "6067",
-        "productImage": "./images/face-lightenind cream.jpg",
-        "productName": "Brightening Cream",
-        "productPrice": "1500 Ksh",
-        "productDescription": "Lighten up plus Active Skin."
-      },
-      {
-        "id": "2fec",
-        "productImage": "./images/pedicure.jpg",
-        "productName": "pedicure drill",
-        "productPrice": "2000 ksh",
-        "productDescription": "Remove all dirt"
-      },
-      {
-        "id": "be2c",
-        "productImage": "./images/tcb for hair.jpeg",
-        "productName": "tcb relaxer",
-        "productPrice": "255 ksh",
-        "productDescription": "Relaxing hair"
-      }
-    ]
+  "features": [
+    {
+      "image": "/images/control-cleaner.jpg",
+      "title": "Guaranteed PURE",
+      "description": "All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients",
+      "link": "#"
+    },
+    {
+      "image": "/images/Loreal.jpg",
+      "title": "Completely Cruelty-Free",
+      "description": "All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients",
+      "link": "#"
+    },
+    {
+      "image": "/images/beauty1.jpg",
+      "title": "Ingredient Sourcing",
+      "description": "All Grace formulations adhere to strict purity standards and will never contain harsh or toxic ingredients",
+      "link": "#"
+    }
+  ],
+  "products": [
+    {
+      "image": "/images/beauty1.jpg",
+      "title": "Launder Double Wear",
+      "price": 2000,
+      "rating": 4
+    },
+    {
+      "image": "/images/foaming-cleanser.jpg",
+      "title": "Mate 3D Foundation",
+      "price": 3000,
+      "rating": 4
+    },
+    {
+      "image": "/images/garnie.jpg",
+      "title": "Drip Primer",
+      "price": 4500,
+      "rating": 4
+    },
+    {
+      "image": "/images/laroche.jpg",
+      "title": "Red Carpet",
+      "price": 3000,
+      "rating": 4
+    },
+    {
+      "image": "/images/Loreal.jpg",
+      "title": "Multi Peptide",
+      "price": 1500,
+      "rating": 4
+    },
+    {
+      "image": "/images/maybelline.jpg",
+      "title": "Black Radience ",
+      "price": 1800,
+      "rating": 4
+    },
+    {
+      "image": "/images/beauty2.png",
+      "title": "Premium Curtains",
+      "price": 3600,
+      "rating": 4
+    },
+    {
+      "image": "/images/beauty4.jpg",
+      "title": "Rimmel Stay ",
+      "price": 1200,
+      "rating": 4
+    }
+  ],
+  "categories": [
+    {
+      "image": "/images/beauty7.jpg",
+      "title": "Caudalie Grape",
+      "discount": "upto 45% off",
+      "link": "#"
+    },
+    {
+      "image": "/images/Loreal.jpg",
+      "title": "Laura ",
+      "discount": "upto 45% off",
+      "link": "#"
+    },
+    {
+      "image": "/images/laroche.jpg",
+      "title": "Maybelline",
+      "discount": "upto 45% off",
+      "link": "#"
+    },
+    {
+      "image": "/images/beauty6.jpg",
+      "title": "Sheer Mineral",
+      "discount": "upto 45% off",
+      "link": "#"
+    }
+  ],
+  "reviews": [
+    {
+      "image": "/images/customer1.jpeg",
+      "text": "The platform is incredibly user-friendly and has significantly streamlined our business processes. The customer support team is responsive and helpful, addressing our queries promptly. Highly recommended!",
+      "name": "Osir Philip",
+      "rating": 4.5
+    },
+    {
+      "image": "/images/customer2.jpeg",
+      "text": "This platform has transformed the way we manage our business operations. The integration with other tools we use is seamless, and the analytics provided are insightful. A minor improvement in the mobile app would make it perfect.",
+      "name": "Mareen Watetu",
+      "rating": 4.5
+    },
+    {
+      "image": "/images/customer3.jpeg",
+      "text": "Exceptional experience! The platform's features are comprehensive and easy to use. We've seen a noticeable improvement in productivity since we started using it. Customer support is top-notch as well.",
+      "name": "Nancy Magoko",
+      "rating": 4.5
+    },
+    {
+      "image": "/images/customer4.jpeg",
+      "text": "The platform offers a lot of great features, but there's a bit of a learning curve. The user interface could be more intuitive. However, once you get the hang of it, it works well.",
+      "name": "Shalyne Chepngeno",
+      "rating": 4.5
+    },
+    {
+      "image": "/images/customer5.jpeg",
+      "text": "Outstanding service! The platform is robust and reliable, and the support team goes above and beyond to ensure everything runs smoothly. It has been a game-changer for our business.",
+      "name": "Caleb Karimi",
+      "rating": 4.5
+    }
+  ],
+  "blogs": [
+    {
+      "image": "/images/beauty4.jpg",
+      "title": "The Timeless Allure of MAC Velvet Teddy Lipstick",
+      "author": "user",
+      "date": "25 July 2024",
+      "summary": "When it comes to iconic beauty products, MAC Velvet Teddy lipstick stands out as a timeless classic that has won the hearts of makeup enthusiasts around the world. Known for its universally flattering shade and luxurious formula, Velvet Teddy has become a staple in countless makeup bags. Whether you’re new to MAC or a long-time fan, here’s why Velvet Teddy deserves a spot in your collection and how you can make the most of this legendary lipstick.",
+      "content": "This is the full content of blog post 2. It provides in-depth information about another topic covered in this blog post.",
+      "link": "#"
+    },
+    {
+      "image": "/images/foaming-cleanser.jpg",
+      "title": "What is Anastasia Beverly Hills Dipbrow Pomade",
+      "author": "user",
+      "date": "25 July 2024",
+      "summary": "Anastasia Beverly Hills Dipbrow Pomade is a highly pigmented, long-wearing brow product that comes in a sleek pot. Its creamy, waterproof formula is designed to provide intense color and definition, making it ideal for creating both natural and bold brow looks. Available in a range of shades to suit various hair colors and skin tones, this pomade is celebrated for its ability to deliver precise, customizable results.",
+      "content": "This is the full content of blog post 2. It provides in-depth information about another topic covered in this blog post.",
+      "link": "#"
+    },
+    {
+      "image": "/images/Loreal.jpg",
+      "title": "Wall to Wall Carpet",
+      "author": "user",
+      "date": "25 July 2024",
+      "summary": "Wall-to-wall carpets are a timeless flooring choice that brings comfort, warmth, and style to any space. Whether you're renovating your home or moving into a new one, wall-to-wall carpeting offers a range of benefits that make it a popular choice among homeowners. In this blog, we’ll explore the advantages of wall-to-wall carpets, the different types available, and tips for choosing and maintaining them to create a cozy and inviting atmosphere in your home.",
+      "content": "This is the full content of blog post 2. It provides in-depth information about another topic covered in this blog post.",
+      "link": "#"
+    },
+    {
+      "image": "/images/maybelline.jpg",
+      "title": "Nourish Your Skin with Avocado Sheet Masks: ",
+      "author": "user",
+      "date": "25 July 2024",
+      "summary": "When it comes to skincare, avocado is a superstar ingredient that has earned its place in the spotlight. Packed with essential nutrients and rich in healthy fats, avocado offers numerous benefits for your skin. Avocado sheet masks, in particular, provide a convenient and effective way to deliver these nourishing properties directly to your face. If you're looking to enhance your skincare routine with a hydrating and rejuvenating treat, here’s why avocado sheet masks are a must-try and how you can make the most of them.",
+      "content": "This is the full content of blog post 2. It provides in-depth information about another topic covered in this blog post.",
+      "link": "#"
+    }
+  ],
+  "users": [
+    {
+      "email": "user@example.com",
+      "password": "password123"  
+    }
+  ],
+  "loginResponses": {
+    "success": {
+      "success": true,
+      "message": "Login successful!"
+    },
+    "failure": {
+      "success": false,
+      "message": "Invalid email or password."
+    }
   }
+}
